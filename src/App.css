@@ -34,7 +34,12 @@
 }
 
 
+/*
+SOme additional parameters you can set
+  border: 8px solid lightgrey;
+  border-radius: 2px;
 
+*/
 
 
 /*WITHOUT ROW AND COLUMN DIVIDERS*/
@@ -58,8 +63,13 @@
   top: -100px;
   left: 600px;
 }
-
-
+.course_schedule {
+  position: absolute;
+  top: 650px;
+  left: 250px;
+  width: 1000px;
+  height: 5000px;
+}
 
 
 /*
@@ -122,6 +132,78 @@ WITH ROW AND COLUMN DIVIDERS:
 }
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+test
+.course-code{
+  user-select: none;
+  border: 8px solid lightgrey;
+  padding: 8px;
+  margin-bottom: 8px;  
+}
+.course-name{
+  user-select: none;
+  border: 8px solid lightgrey;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.course-description{
+  user-select: none;
+  border: 8px solid lightgrey;
+  padding: 8px;
+  margin-bottom: 8px  
+}
+.danger-meter{
+  user-select: none;
+  border: 8px solid lightgrey;
+  padding: 8px;
+  margin-bottom: 8px  
+}
+.course_schedule {
+  user-select: none;
+  position: absolute;
+  top: 670px;
+  left: 0px;
+  width: 1500px;
+  height: 5000px;
+  border: 8px solid lightgrey;
+  border-radius: 2px;
+}
+.draggable {
+  user-select: none;
+}
+*/
 
 @keyframes App-logo-spin {
   from {
