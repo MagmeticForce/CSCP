@@ -23,7 +23,7 @@ function IntroPage() {
         <h1 className="title">CSDP</h1>
         <p className="subtitle">Computer Science Degree Planner</p>
         <button
-          onClick={() => navigate('/page2')} // Using navigate to programmatically go to page2
+          onClick={() => navigate('/UserInputPage')} // Using navigate to programmatically go to userInputPage
         >
           Get Started!
         </button>
@@ -32,26 +32,98 @@ function IntroPage() {
   );
 }
 
-// Page2 component
-function Page2() {
+// UserInputPage component
+function UserInputPage() {
 
   const navigate = useNavigate(); // Hook to get navigation function
 
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>User Input Page</h1>
-      <p>insert code for this page:</p>
-      <p>- rename to "userInputPage" and allow proper connection from introPage</p>
-      <p>- ask user for information</p>
-      <p>- read the information, store, and use to generate the schedule</p>
-      <p>- link to third page, to be named "scheduleOutputPage"</p>
+      <br></br>
+      <br></br>
+
+      <p>Name:</p>
+      <br></br>
+      <textarea name="name_attribute" class="no-resize"></textarea>
+      
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <p>Incoming Credits:</p>
+      <p>(Write only the OU class code for each class you have earned credit for, with one class per line.)</p>
+      <br></br>
+      <textarea name="incoming_credits_attribute" class="no-resize-tall"></textarea>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <p>[add additional questions below because i know i am forgetting some lol]</p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <button
-          onClick={() => navigate('/')} // Using navigate to programmatically go to page2
+          onClick={() => navigate('/ScheduleOutputPage')} // Using navigate to programmatically return to IntroPage
+        >
+          Generate Schedule
+        </button>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <button
+          onClick={() => navigate('/')} // Using navigate to programmatically return to IntroPage
         >
           Return Home
         </button>
+
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
     </div>
   );
+}
+
+function ScheduleOutputPage(){
+  const navigate = useNavigate();
+
+  return(
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+
+      <br></br>
+      <br></br>
+      <h1>Schedule Output Page</h1>
+      <p>(Will display the generated schedule with drag-and-drop functionality once created)</p>
+      <br></br>
+      <br></br>
+      <button
+          onClick={() => navigate('/')} // Using navigate to programmatically return to IntroPage
+        >
+          Return Home
+        </button>
+
+    </div>
+  )
+
+  
+}
+
+function SecretPage(){
+  return(
+    <div style={{ textAlign: 'center', marginTop: '50px' }}>
+      <h1>hi lol</h1>
+    </div>
+  )
 }
 
 // Root component and Router setup
@@ -62,7 +134,9 @@ root.render(
       <Routes>
         {/* Define the routes */}
         <Route path="/" element={<IntroPage />} />
-        <Route path="/page2" element={<Page2 />} />
+        <Route path="/UserInputPage" element={<UserInputPage />} />
+        <Route path="/ScheduleOutputPage" element={<ScheduleOutputPage />} />
+        <Route path="/SecretPage" element={<SecretPage />} />
       </Routes>
     </Router>
   </React.StrictMode>
