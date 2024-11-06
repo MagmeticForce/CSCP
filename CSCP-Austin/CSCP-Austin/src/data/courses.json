@@ -3,8 +3,8 @@
     {
         "code": "MTH 1554",
         "name": "Calculus I",
-        "description": "learn the basics of Java",
-        "prerequisites": [],
+        "description": "A detailed study of limits, continuity, derivatives of algebraic and transcendental functions, applications of derivatives, numerical techniques, integrals and the Fundamental Theorem of Calculus.",
+        "prerequisites": ["MTH 1441 with a grade of (C) or higher, or MTH 1331 and MTH 1332, each with a grade of (C) or higher or placement &&& Satisfies the university general education requirement in the formal reasoning knowledge foundation area."],
         "difficulty": 1,
         "review": "A great introduction into coding. the class is relatively easy. I would look at this as like trying to learn a new language in a way.",
         "hours": 4
@@ -12,8 +12,8 @@
     {
         "code": "MTH 1555",
         "name": "Calculus II",
-        "description": "Data Structures and Abstraction",
-        "prerequisites": ["CS101"],
+        "description": "A detailed study of methods of integration, applications of the integrals, improper integrals, sequences, series and power series, polar coordinates and parametric curves.",
+        "prerequisites": ["MTH 1554 with a grade of (C) or higher &&& Satisfies the university general education requirement for the knowledge applications integration area. Prerequisites for knowledge applications: completion of the university general education requirement in the formal reasoning knowledge foundation area."],
         "difficulty": 3,
         "review": "Challenging, the projects here are big. this is the first step into having to spend time learning and updating code.",
         "hours": 4
@@ -22,7 +22,7 @@
         "code": "MTH 2775",
         "name": "Linear Algebra",
         "description": "Formal models of computation, ranging from finite state automata to Turing machines. Computational models are used to discuss the languages recognized by these machines and address issues of computability.",
-        "prerequisites": ["CS101", "CS201"],
+        "prerequisites": ["MTH 1555 with a grade of (C) or higher"],
         "difficulty": 3,
         "review": "Following Discrete mathematics with this class is recommended.",
         "hours": 4
@@ -30,8 +30,8 @@
     {
         "code": "APM 2663",
         "name": "Discrete Mathematics",
-        "description": " ",
-        "prerequisites": [ ],
+        "description": "Concepts and methods of discrete mathematics with an emphasis on their application to computer science. Logic and proofs, sets and relations, algorithms, induction and recursion, combinatorics, graphs and trees.",
+        "prerequisites": ["MTH 1555 with a grade of (C) or higher"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -40,7 +40,7 @@
         "code": "STA 2226",
         "name": "Applied Probability and Statistics",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["MTH 1222 with a grade of (C) or higher or MTH 1554 with a grade of (C) or higher"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -58,7 +58,7 @@
         "code": "CSI 2300",
         "name": "Object-Oriented Computing",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["EGR 1400 or CSI 1300 or CSI 1320 or CSI 1420 with a grade of C or higher"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -67,7 +67,7 @@
         "code": "CSI 2310",
         "name": "Data Structures",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["CSI 2300"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -76,7 +76,7 @@
         "code": "CSI 2470",
         "name": "Introduction to Computer Networks",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["CSI 1320 or CSI 1420"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -85,7 +85,7 @@
         "code": "CSI 2999",
         "name": "Sophomore Project",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["CSI 2300 with a grade of C or higher"],
         "difficulty": 1,
         "review": " ",
         "hours": 2
@@ -94,7 +94,7 @@
         "code": "CSI 3370",
         "name": "Software Engineering and Practice",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["CSI 2300"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -103,7 +103,7 @@
         "code": "CSI 3430",
         "name": "Theory of Computation",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["APM 2663"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -112,7 +112,7 @@
         "code": "CSI 3450",
         "name": "Database Design and Implementation",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["CSI 2290 or CSI 2300"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -121,7 +121,7 @@
         "code": "CSI 3610",
         "name": "Design and Analysis of Algorithms",
         "description": " ",
-        "prerequisites": [ ],
+        "prerequisites": ["(CSI 2310 or CSI 2290), APM 2663, & Major standing"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
@@ -130,7 +130,7 @@
         "code": "CSI 3640",
         "name": "Computer Organization",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(CSI 2290 or CSI 2310 or EGR 2400) & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -139,7 +139,7 @@
         "code": "CSI 4350",
         "name": "Programming Languages",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2310 and CSI 3430 & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -148,7 +148,7 @@
         "code": "CSI 4480",
         "name": "Information Security Practice",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2470 & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -157,7 +157,7 @@
         "code": "CSI 4500",
         "name": "Fundamentals of Operating Systems",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2310, CSI 3640 & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -166,7 +166,7 @@
         "code": "CSI 4650",
         "name": "Parallel and Distributed Computing",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 3640 & Majore Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -175,7 +175,7 @@
         "code": "CSI 4999",
         "name": "Senior Capstone Project",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 3370, CSI 3450, (CSI 3150 or CSI 3500 or CSI 3520 or CSI 3610 or CSI 3620 or CSI 3640) & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -184,7 +184,7 @@
         "code": "BIO 3400",
         "name": "Genetics",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["BIO 1200 with a grade of (C) or higher"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -193,7 +193,7 @@
         "code": "CSI 4780",
         "name": "Bioinformatics",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["Major standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -202,7 +202,7 @@
         "code": "CSI 4460",
         "name": "Information Security",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2470 & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -211,7 +211,7 @@
         "code": "CSI 4700",
         "name": "Software Security",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["Major standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -220,7 +220,7 @@
         "code": "APM 4347",
         "name": "Mathematics of Cryptology",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["MTH 3002 or  APM 3610 or CSI 3610 with grade of (C) or higher, or permission of department."],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -230,7 +230,7 @@
         "code": "CSI 4130",
         "name": "Computational Intelligence",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(EGR 2600 or STA 2221 or STA 2226) and (CSI 3610 or CSI 3620) & Major Standing"],
         "difficulty": 1,
         "review": ""
 
@@ -239,7 +239,7 @@
         "code": "CSI 4810",
         "name": "Information Retrieval and Knowledge Discovery",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": ""
 
@@ -248,7 +248,7 @@
         "code": "CSI 3660",
         "name": "Systems Administration",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 1320 or CSI 1420 & Major Standing"],
         "difficulty": 1,
         "review": ""
 
@@ -257,7 +257,7 @@
         "code": "CSI 4660",
         "name": "Advanced Systems Administration",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 3660 & Major Standing"],
         "difficulty": 1,
         "review": ""
         
@@ -275,16 +275,7 @@
         "code": "CSI 4380",
         "name": "Game Programming",
         "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 3150",
-        "name": "Web and Mobile Systems",
-        "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 1300, CSI 1320, CSI 1420 or EGR 1400 & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -293,7 +284,7 @@
         "code": "CSI 4230",
         "name": "Mobile Application Development",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2300 & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -302,100 +293,79 @@
         "code": "CSI 3150",
         "name": "Web and Mobile Systems",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2300 & Major Standing"],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "CSI 4160",
         "name": "Integreated Computing Systems",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["CSI 2470, CSI 3150, CSI 3450 & Major Standing"],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
-
-
-
     {
         "code": "CSI 1320",
         "name": "Intro to Python and Unix",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["MTH 0662"],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "WRT 1060",
         "name": "Writing Foundations",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["WRT 1050 with a grade of (C) or higher or placement"],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "BIO 1200",
         "name": "Biology I",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["Satisfies the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "BIO 1300",
         "name": "Biology II",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["BIO 1200 recommended & Satisfies the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "CHM 1440",
         "name": "General Chemistry I",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["Score of 22 or higher on ACT mathematics exam or score of 550 or higher on SAT mathematics exam or MTH 0662 with a grade of C or better or equivalent or placement above MTH 0662 &&& CHM 1440 and CHM 1470 together satisfy the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "PHY 1510",
         "name": "Introductory Physics I",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["MTH 1554 & PHY 1510 and PHY 1100 together satisfy the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
-        "review": ""
-
-    },
-    {
-        "code": "PHY 1610",
-        "name": "Fundamentals of Physics I",
-        "description": "*Students may not receive credit for both PHY 1510 and PHY 1610.",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": ""
-
-    },
-    {
-        "code": "PHY 1620",
-        "name": "Fundamentals of Physics II",
-        "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": ""
-
+        "review": "",
+        "hours": 4
     },
     {
         "code": "CSI 4140",
         "name": "Deep Learning and Applications",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(APM 2555 or MTH 2775) and ( EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -405,7 +375,7 @@
         "code": "CSI 4170",
         "name": "Machine Learning",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -414,7 +384,7 @@
         "code": "CSI 4180",
         "name": "Natural Language Processing",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
@@ -424,30 +394,30 @@
         "code": "CSI 4550",
         "name": "Visual Computing",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
 
     },
     {
-        "code": "",
-        "name": "",
+        "code": "MTH 0662",
+        "name": "Intermediate Algebra",
         "description": "",
-        "prerequisites": [],
+        "prerequisites": ["MTH 0661 with a grade of (C) or higher or placement exam"],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 4
 
     },
     {
-        "code": "",
-        "name": "",
+        "code": "MTH 0661",
+        "name": "Elementary Algebra",
         "description": "",
         "prerequisites": [],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 4
 
     },
     {
