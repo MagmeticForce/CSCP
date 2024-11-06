@@ -5,9 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(to bottom, #5fcfff, #6d8c94); /* Gradient from top to bottom */
+  background-attachment: fixed; /* Ensure gradient stays fixed during scrolling */
+  background-size: cover;
+  height: 100%; /* Ensure the body stretches to the full height of the page */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Optional: helps with layout consistency */
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* x-offset, y-offset, blur-radius, color */
+}
+
+.title {
+  font-size: 8rem;
+  color: white; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+  margin-bottom: 0.5rem;
+
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+}
+
+button {
+  font-size: 1.2rem; /* Increase font size */
+  padding: 10px 20px; /* Adjust padding (top/bottom, left/right) */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth background color change */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+
+html, body {
+  height: 100%; /* Ensure full height */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.no-resize {
+  width: 150px; 
+  height: 20px; 
+  resize: none; 
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.no-resize-tall {
+  width: 150px; 
+  height: 100px; 
+  resize: none; 
+  white-space: nowrap;
+}
+

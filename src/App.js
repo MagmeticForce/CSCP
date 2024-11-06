@@ -19,15 +19,15 @@ class App extends React.Component {
   //The code for displaying each individual course is in 'components/Courses.js'
   render () {
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
         <div className="App">
           <img className="Course-Planner-Page-Image" alt='Stack with books, binder, and notebook.' src={course_planner_page_image}></img>
           <h1>Your Personalized Schedule</h1>
+          <DragDropContext onDragEnd={this.onDragEnd}>
             <h2>Fall 2025</h2>
               <Schedule key="schedule_1" />
             <h2>Winter 2026</h2>
+          </DragDropContext>
         </div>
-      </DragDropContext>
     );
   }
 }
