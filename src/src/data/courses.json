@@ -1,0 +1,30 @@
+
+[
+    {
+        "code": "CS101",
+        "name": "Intro to Java",
+        "description": "learn the basics of Java",
+        "prerequisites": [],
+        "difficulty": 1,
+        "review": "A great introduction into coding. the class is relatively easy. I would look at this as like trying to learn a new language in a way."
+
+    },
+    {
+        "code": "CS201",
+        "name": "Data Structures",
+        "description": "Data Structures and Abstraction",
+        "prerequisites": ["CS101"],
+        "difficulty": 2,
+        "review": "Challenging, the projects here are big. this is the first step into having to spend time learning and updating code."
+
+    },
+    {
+        "code": "CS301",
+        "name": "Computational Theory",
+        "description": "Formal models of computation, ranging from finite state automata to Turing machines. Computational models are used to discuss the languages recognized by these machines and address issues of computability.",
+        "prerequisites": ["CS101", "CS201"],
+        "difficulty": 3,
+        "review": "Following Discrete mathematics with this class is recommended."
+
+    }
+]
