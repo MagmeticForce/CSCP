@@ -5,8 +5,8 @@
         "name": "Calculus I",
         "description": "A detailed study of limits, continuity, derivatives of algebraic and transcendental functions, applications of derivatives, numerical techniques, integrals and the Fundamental Theorem of Calculus.",
         "prerequisites": ["MTH 1441 with a grade of (C) or higher, or MTH 1331 and MTH 1332, each with a grade of (C) or higher or placement &&& Satisfies the university general education requirement in the formal reasoning knowledge foundation area."],
-        "difficulty": 3,
-        "review": "Calc 1 review",
+        "difficulty": 2,
+        "review": "Calc 1 review WIP.",
         "hours": 4
     },
     {
@@ -419,56 +419,7 @@
         "review": "",
         "hours": 4
 
-    },
-    {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": "",
-        "hours":
-
-    },
-    {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": "",
-        "hours":
-
-    },
-    {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": "",
-        "hours":
-
-    },
-    {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": "",
-        "hours":
-
-    },
-    {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
-        "difficulty": 1,
-        "review": "",
-        "hours":
-
-    },
+    }
+ 
     
 ]
