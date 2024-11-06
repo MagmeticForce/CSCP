@@ -61,7 +61,7 @@ export default class Course extends React.Component {
             <div
               {...provided.draggableProps}
               {...provided.dragHandleProps}
-              innerRef={provided.innerRef}
+              ref={provided.innerRef}
             >
               <h3 className="course-code">{this.props.course.code}</h3>
               <h3 className="course-name">{this.props.course.name}</h3>

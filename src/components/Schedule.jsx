@@ -13,7 +13,7 @@ export default class Schedule extends React.Component {
                     {provided => (
                         <div 
                             className="course_schedule"
-                            innerRef={provided.innerRef}
+                            ref={provided.innerRef}
                             {...provided.droppableProps}
                         >
                             {courses.map((course, index) => (
