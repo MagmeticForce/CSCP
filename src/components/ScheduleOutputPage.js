@@ -24,16 +24,57 @@ import { useNavigate } from 'react-router-dom';
 import Courses from './Courses'; // Assuming you have a Course component in the components folder
 import courses from '../data/courses.json'; // Assuming courses.json contains the course data
 import './ScheduleOutputPage.css';
+import course_planner_page_image from '../images/Image_for_Course_Planner_Page.jpg';
+import { DragDropContext } from 'react-beautiful-dnd';
+import Schedule from '../components/Schedule.jsx';
+import withRouter from './withRouter';
 
-function ScheduleOutputPage() {
-  const navigate = useNavigate();
 
+class ScheduleOutputPage extends React.Component {
+  
+  create_navigate () {
+    const { navigate } = this.props;
+    navigate("/");
+  }
+
+
+  onDragEnd = result => {
+    //TODO: add stuff
+  };
+  
+  render () {
+    return (
+      <DragDropContext onDragEnd={this.onDragEnd}>
+        <div className="App">
+          <img className="Course-Planner-Page-Image" alt='Stack with books, binder, and notebook.' src={course_planner_page_image}></img>
+          <h1>Your Personalized Schedule</h1>
+            <h2>Fall 2025</h2>
+              <Schedule key="schedule_1" />
+            <h2>Winter 2026</h2>
+        </div>
+        <button onClick={() => this.navigate('/')}>Return Home</button>
+      </DragDropContext>
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+  /*
   return (
     <div style={{ textAlign: 'center', marginTop: '50px' }}>
       <h1>Computer Science Degree Planner</h1>
       <p>(Displays the generated degree plan)</p>
 
-      {/* Render the course list */}
+      {// Render the course list //}
       <div className="course-list">
         {courses.map((course) => (
           <Courses key={course.code} course={course} />
@@ -43,7 +84,7 @@ function ScheduleOutputPage() {
       <button onClick={() => navigate('/')}>Return Home</button>
     </div>
   );
-}
+  */
 
 export default ScheduleOutputPage;
 
