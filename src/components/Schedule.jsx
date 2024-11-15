@@ -4,8 +4,9 @@ import courses from '../data/courses.json'; //"courses" is just a variable that 
 import { Droppable } from 'react-beautiful-dnd';
 
 
+
 export default class Schedule extends React.Component {
-    
+
     render () {
         return (
             <div>
@@ -16,7 +17,7 @@ export default class Schedule extends React.Component {
                             ref={provided.innerRef}
                             {...provided.droppableProps}
                         >
-                            {courses.map((course, index) => (
+                            {this.props.courses.map((course, index) => (
                                 <Courses key={course.code} course={course} index={index} />
                             ))}
                             {provided.placeholder}
