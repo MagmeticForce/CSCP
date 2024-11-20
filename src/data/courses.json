@@ -60,7 +60,7 @@
         "description": " ",
         "prerequisites": ["EGR 1400 or CSI 1300 or CSI 1320 or CSI 1420 with a grade of C or higher"],
         "difficulty": 1,
-        "review": " ",
+        "review": "This course effectively serves as a more in-depth introduction to coding in Java, specifically with the use of object-based programming. Weekly assignments, as well as a final project, are given to test your knowledge periodically. Be sure to not fall behind on understanding topics. - Nicholas Sakowski",
         "hours": 4
     },
     {
@@ -69,7 +69,7 @@
         "description": " ",
         "prerequisites": ["CSI 2300"],
         "difficulty": 1,
-        "review": " ",
+        "review": "This course builds on your knowledge of programming in Java, teaching you how to declare functionality in a file for various types of data storage, as well as call it in a runnable file to perform operations on this data structure. Occasional projects are assigned requiring you to implement specific code to perform operations on a data structure to receive a desired output. Lectures aid in learning how these structures work and provide you with similar code, so make sure to attend especially these lectures. - Nicholas Sakowski",
         "hours": 4
     },
     {
