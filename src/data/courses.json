@@ -123,7 +123,7 @@
         "description": " ",
         "prerequisites": ["(CSI 2310 or CSI 2290), APM 2663, & Major standing"],
         "difficulty": 1,
-        "review": " ",
+        "review": "This class involves integration of math concepts for algorithm design. It is recommended to take and understand the concepts from Data Structures before taking this course, as well as have a solid understanding of math concepts up to this point. - Nicholas Sakowski",
         "hours": 4
     },
     {
