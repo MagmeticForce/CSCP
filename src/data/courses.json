@@ -41,8 +41,8 @@
         "name": "Applied Probability and Statistics",
         "description": " ",
         "prerequisites": ["MTH 1222 with a grade of (C) or higher or MTH 1554 with a grade of (C) or higher"],
-        "difficulty": 1,
-        "review": " ",
+        "difficulty": 2,
+        "review": "This class goes into detail on many topics involving determining chances of various events occuring. Probability distributions are also determined and the skill to read data and find the correct formulas to use for each problem, found on a given formula sheet for exams, are necessary. - Nicholas Sakowski",
         "hours": 4
     },
     {
