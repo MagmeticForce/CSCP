@@ -1,4 +1,5 @@
 // src/components/ScheduleOutputPage.js
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Courses from './Courses'; // Assuming you have a Course component in the components folder
@@ -88,6 +89,7 @@ class ScheduleOutputPage extends React.Component {
 }
 
 export default withRouter (ScheduleOutputPage);
+
 
 /*Functionality code that kinda works?
 import React from 'react';

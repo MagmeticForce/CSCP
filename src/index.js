@@ -1,3 +1,4 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -31,15 +32,13 @@ reportWebVitals();
 
 
 
+
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import backgroundImage from '../src/images/bg01.jpg'; 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; // Import useNavigate
-*/
-
-/*
 // IntroPage component
 function IntroPage() {
   const navigate = useNavigate(); // Hook to get navigation function
@@ -185,6 +184,7 @@ reportWebVitals();
 */
 
 /*
+
 // index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -198,6 +198,8 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
 */
 
 //reportWebVitals();
+
