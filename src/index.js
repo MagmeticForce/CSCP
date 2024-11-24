@@ -1,10 +1,44 @@
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+
+/*
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+*/
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import backgroundImage from '../src/images/bg01.jpg'; 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"; // Import useNavigate
-
 // IntroPage component
 function IntroPage() {
   const navigate = useNavigate(); // Hook to get navigation function
@@ -148,6 +182,9 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 */
+
+/*
+
 // index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -162,4 +199,7 @@ root.render(
   </React.StrictMode>
 );
 
-reportWebVitals();
+*/
+
+//reportWebVitals();
+
