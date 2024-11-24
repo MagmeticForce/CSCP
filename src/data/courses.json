@@ -39,10 +39,13 @@
     {
         "code": "STA 2226",
         "name": "Applied Probability and Statistics",
+
         "description": "Introduction to probability and statistics as applied to the physical, biological and social sciences and to engineering. Applications of special distributions and nonparametric techniques. Regression analysis and analysis of variance.",
         "prerequisites": ["MTH 1554"],
         "difficulty": 1,
         "review": "",
+
+
         "hours": 4
     },
     {
@@ -51,7 +54,7 @@
         "description": "Topics include binary numbers and C programming concepts such as data types, bitwise operations, control flow, arrays, pointers, structures, and input/output. Basic Unix commands and shell programming are covered, as well as Unix utilities for developing and debugging C programs.",
         "prerequisites": ["MTH 1554"],
         "difficulty": 1,
-        "review": " ",
+        "review": "Not too difficult of a class, with simple assignments to learn coding in not just the language, but also fundamental concepts for all coding languages, as well as a group course project. This project will require solid knowledge on all topics, just make sure to not procrastinate on this or any other assignments. - Nicholas Sakowski",
         "hours": 4
     },
     {
@@ -60,7 +63,7 @@
         "description": "Introduction to object-oriented computer programming using a high-level programming language such as Java. Classes, member functions, inheritance, polymorphism and operator overloading. Design methodologies and introduction to software engineering principles and practices. Basic data structures, algorithms and event driven programming concepts are introduced.",
         "prerequisites": ["EGR 1400", "CSI 1300", "CSI 1320",  "CSI 1420"],
         "difficulty": 1,
-        "review": " ",
+        "review": "This course effectively serves as a more in-depth introduction to coding in Java, specifically with the use of object-based programming. Weekly assignments, as well as a final project, are given to test your knowledge periodically. Be sure to not fall behind on understanding topics. - Nicholas Sakowski",
         "hours": 4
     },
     {
@@ -69,7 +72,7 @@
         "description": "This course covers data structures using object oriented programming. The fundamental data structures in computer science, including stacks, queues, lists and trees are covered in detail. Concepts of design, analysis and verification are discussed in the context of abstract data types.",
         "prerequisites": ["CSI 2300"],
         "difficulty": 1,
-        "review": " ",
+        "review": "This course builds on your knowledge of programming in Java, teaching you how to declare functionality in a file for various types of data storage, as well as call it in a runnable file to perform operations on this data structure. Occasional projects are assigned requiring you to implement specific code to perform operations on a data structure to receive a desired output. Lectures aid in learning how these structures work and provide you with similar code, so make sure to attend especially these lectures. - Nicholas Sakowski",
         "hours": 4
     },
     {
@@ -123,7 +126,7 @@
         "description": "Computer algorithms, their design and analysis. Strategies constructing algorithmic solutions, including divide-and-conquer, dynamic programming and greedy algorithms. Computational complexity as it pertains to time and space is used to evaluate the algorithms.",
         "prerequisites": ["CSI 2310 or CSI 2290", "APM 2663", "Major Standing"],
         "difficulty": 1,
-        "review": " ",
+        "review": "This class involves integration of math concepts for algorithm design. It is recommended to take and understand the concepts from Data Structures before taking this course, as well as have a solid understanding of math concepts up to this point. - Nicholas Sakowski",
         "hours": 4
     },
     {
