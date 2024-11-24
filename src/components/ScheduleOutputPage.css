@@ -19,4 +19,32 @@ used with semi functional code
     list-style-type: none;
     padding: 0;
   }
+
+
+
+  .course {
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: white;
+  }
+
+  .top-bar {
+    background-color: white;
+    padding: 8px;
+  }
+
+  .top-bar-text {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+  }
+
+  .return-home-button {
+    position: absolute;
+    top: 17px;
+    left: 1350px;
+  }
+
   
