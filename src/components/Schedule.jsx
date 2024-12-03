@@ -8,7 +8,10 @@ import { Droppable } from 'react-beautiful-dnd';
 export default class Schedule extends React.Component {
 
     render () {
+
+        
         return (
+
             <div>
                 <Droppable droppableId="schedule_1">
                     {provided => (
@@ -19,6 +22,7 @@ export default class Schedule extends React.Component {
                         >
                             {this.props.courses.map((course, index) => (
                                 <Courses key={course.code} course={course} index={index} />
+
                             ))}
                             {provided.placeholder}
                         </div>
