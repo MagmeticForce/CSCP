@@ -13,5 +13,9 @@ npm install react-router-dom@latest
 
 npm install react-beautiful-dnd
 
+npm install jspdf, xlsx
+
+npm install jspdf-autotable
+
 
 ![image](https://github.com/user-attachments/assets/6f2f669d-ff22-461c-bf3a-98112af1397e)
