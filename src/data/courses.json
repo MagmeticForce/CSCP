@@ -4,7 +4,7 @@
         "code": "MTH 1554",
         "name": "Calculus I",
         "description": "A detailed study of limits, continuity, derivatives of algebraic and transcendental functions, applications of derivatives, numerical techniques, integrals and the Fundamental Theorem of Calculus.",
-        "prerequisites": [],
+        "prerequisites": ["MTH 1441"],
         "difficulty": 2,
 
         "review": "You will work with story problems and basic applications of calculus, make sure you know trigonometry and college algebra. Integration and Differentiation are fundamental concepts that you will learn in this course. - Math Professor Eddie Cheng",
@@ -920,6 +920,7 @@
         "code": "LANGUAGE_CULTURE_GEN_ED",
         "name": "Language and Culture General Education",
         "category": "General Education",
+        "link": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture",
         "hours": 4,
         "description": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture" 
       },
@@ -927,6 +928,7 @@
         "code": "SCI_LAB_GEN_ED",
         "name": "Approved Science Elective with Lab",
         "category": "General Education",
+        "link": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture",
         "hours": 4,
         "description": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture"
       },
@@ -941,6 +943,7 @@
         "code": "GLOBAL_PERSPECTIVE_GEN_ED",
         "name": "Global Perspective General Education Course",
         "category": "General Education",
+        "link": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture",
         "hours": 4,
         "description": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture" 
       },
@@ -948,6 +951,7 @@
         "code": "LITERATURE_GEN_ED",
         "name": "Literature General Education Course",
         "category": "General Education",
+        "link": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture",
         "hours": 4,
         "description": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture" 
       },
@@ -955,6 +959,7 @@
         "code": "SOCIAL_SCIENCE_GEN_ED",
         "name": "Social Science General Education Course",
         "category": "General Education",
+        "link": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture",
         "hours": 4,
         "description": "https://catalog.oakland.edu/preview_program.php?catoid=64&poid=12614#languageandculture" 
       }
