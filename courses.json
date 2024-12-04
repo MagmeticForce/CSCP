@@ -32,294 +32,50 @@
         "name": "Discrete Mathematics",
         "description": "Concepts and methods of discrete mathematics with an emphasis on their application to computer science. Logic and proofs, sets and relations, algorithms, induction and recursion, combinatorics, graphs and trees.",
         "prerequisites": ["MTH 1555 with a grade of (C) or higher"],
-        "difficulty": 1,
+        "difficulty": 3,
         "review": " ",
         "hours": 4
     },
     {
         "code": "STA 2226",
         "name": "Applied Probability and Statistics",
-        "description": " ",
+        "description": "Introduction to probability and statistics as applied to the physical, biological and social sciences and to engineering. Applications of special distributions and nonparametric techniques. Regression analysis and analysis of variance. ",
         "prerequisites": ["MTH 1222 with a grade of (C) or higher or MTH 1554 with a grade of (C) or higher"],
         "difficulty": 1,
         "review": " ",
         "hours": 4
     },
-    {
-        "code": "CSI 1420",
-        "name": "Introduction to C Programming and Unix",
-        "description": " ",
-        "prerequisites": ["MTH 1554"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 2300",
-        "name": "Object-Oriented Computing",
-        "description": " ",
-        "prerequisites": ["EGR 1400 or CSI 1300 or CSI 1320 or CSI 1420 with a grade of C or higher"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 2310",
-        "name": "Data Structures",
-        "description": " ",
-        "prerequisites": ["CSI 2300"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 2470",
-        "name": "Introduction to Computer Networks",
-        "description": " ",
-        "prerequisites": ["CSI 1320 or CSI 1420"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 2999",
-        "name": "Sophomore Project",
-        "description": " ",
-        "prerequisites": ["CSI 2300 with a grade of C or higher"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 2
-    },
-    {
-        "code": "CSI 3370",
-        "name": "Software Engineering and Practice",
-        "description": " ",
-        "prerequisites": ["CSI 2300"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 3430",
-        "name": "Theory of Computation",
-        "description": " ",
-        "prerequisites": ["APM 2663"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 3450",
-        "name": "Database Design and Implementation",
-        "description": " ",
-        "prerequisites": ["CSI 2290 or CSI 2300"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 3610",
-        "name": "Design and Analysis of Algorithms",
-        "description": " ",
-        "prerequisites": ["(CSI 2310 or CSI 2290), APM 2663, & Major standing"],
-        "difficulty": 1,
-        "review": " ",
-        "hours": 4
-    },
-    {
-        "code": "CSI 3640",
-        "name": "Computer Organization",
-        "description": "",
-        "prerequisites": ["(CSI 2290 or CSI 2310 or EGR 2400) & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4350",
-        "name": "Programming Languages",
-        "description": "",
-        "prerequisites": ["CSI 2310 and CSI 3430 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4480",
-        "name": "Information Security Practice",
-        "description": "",
-        "prerequisites": ["CSI 2470 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4500",
-        "name": "Fundamentals of Operating Systems",
-        "description": "",
-        "prerequisites": ["CSI 2310, CSI 3640 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4650",
-        "name": "Parallel and Distributed Computing",
-        "description": "",
-        "prerequisites": ["CSI 3640 & Majore Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4999",
-        "name": "Senior Capstone Project",
-        "description": "",
-        "prerequisites": ["CSI 3370, CSI 3450, (CSI 3150 or CSI 3500 or CSI 3520 or CSI 3610 or CSI 3620 or CSI 3640) & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "BIO 3400",
-        "name": "Genetics",
-        "description": "",
-        "prerequisites": ["BIO 1200 with a grade of (C) or higher"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4780",
-        "name": "Bioinformatics",
-        "description": "",
-        "prerequisites": ["Major standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4460",
-        "name": "Information Security",
-        "description": "",
-        "prerequisites": ["CSI 2470 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4700",
-        "name": "Software Security",
-        "description": "",
-        "prerequisites": ["Major standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "APM 4347",
-        "name": "Mathematics of Cryptology",
-        "description": "",
-        "prerequisites": ["MTH 3002 or  APM 3610 or CSI 3610 with grade of (C) or higher, or permission of department."],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
 
-    },
-    {
-        "code": "CSI 4130",
-        "name": "Computational Intelligence",
-        "description": "",
-        "prerequisites": ["(EGR 2600 or STA 2221 or STA 2226) and (CSI 3610 or CSI 3620) & Major Standing"],
-        "difficulty": 1,
-        "review": ""
 
-    },
-    {
-        "code": "CSI 4810",
-        "name": "Information Retrieval and Knowledge Discovery",
-        "description": "",
-        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
-        "difficulty": 1,
-        "review": ""
 
-    },
-    {
-        "code": "CSI 3660",
-        "name": "Systems Administration",
-        "description": "",
-        "prerequisites": ["CSI 1320 or CSI 1420 & Major Standing"],
-        "difficulty": 1,
-        "review": ""
 
-    },
+
+
+
     {
-        "code": "CSI 4660",
-        "name": "Advanced Systems Administration",
-        "description": "",
-        "prerequisites": ["CSI 3660 & Major Standing"],
-        "difficulty": 1,
-        "review": ""
-        
-    },
-    {
-        "code": "CSI 3380",
-        "name": "Game Design",
-        "description": "",
+        "code": "MTH 0661",
+        "name": "Elementary Algebra",
+        "description": "Order of operations, algebra of exponents, variable expressions, linear equations and inequalities in one variable, graphing and lines, linear systems of equations in two and three variables, polynomial arithmetic, factoring; solving equations by factoring applications and problem solving.",
         "prerequisites": [],
         "difficulty": 1,
         "review": "",
         "hours": 4
+
     },
     {
-        "code": "CSI 4380",
-        "name": "Game Programming",
-        "description": "",
-        "prerequisites": ["CSI 1300, CSI 1320, CSI 1420 or EGR 1400 & Major Standing"],
+        "code": "MTH 0662",
+        "name": "Intermediate Algebra",
+        "description": "Rational expressions, radicals and rational exponents, solving rational and radical equations, quadratic equations, introduction to functions and their graphs, exponential and logarithmic functions, applications and problem solving.",
+        "prerequisites": ["MTH 0661 with a grade of (C) or higher or placement exam"],
         "difficulty": 1,
         "review": "",
         "hours": 4
-    },
-    {
-        "code": "CSI 4230",
-        "name": "Mobile Application Development",
-        "description": "",
-        "prerequisites": ["CSI 2300 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 3150",
-        "name": "Web and Mobile Systems",
-        "description": "",
-        "prerequisites": ["CSI 2300 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 4160",
-        "name": "Integreated Computing Systems",
-        "description": "",
-        "prerequisites": ["CSI 2470, CSI 3150, CSI 3450 & Major Standing"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
-    },
-    {
-        "code": "CSI 1320",
-        "name": "Intro to Python and Unix",
-        "description": "",
-        "prerequisites": ["MTH 0662"],
-        "difficulty": 1,
-        "review": "",
-        "hours": 4
+
     },
     {
         "code": "WRT 1060",
         "name": "Writing Foundations",
-        "description": "",
+        "description": "Methods of writing and research including the use of rhetorical strategies and synthesis of scholarly sources to create academic arguments. Emphasizes processes of writing and revision with a focus on information literacy, critical thinking, and effective communication in diverse rhetorical contexts. A grade of (C) or higher must be achieved to satisfy the university general education requirement in the writing knowledge foundation area.",
         "prerequisites": ["WRT 1050 with a grade of (C) or higher or placement"],
         "difficulty": 1,
         "review": "",
@@ -328,16 +84,26 @@
     {
         "code": "BIO 1200",
         "name": "Biology I",
-        "description": "",
+        "description": "Introduction to cellular and molecular biology, enzymology, metabolism, genetics, cell division. One year of high school chemistry is strongly recommended.",
         "prerequisites": ["Satisfies the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
         "review": "",
         "hours": 4
     },
     {
+        "code": "BIO 1201",
+        "name": "Biology Laboratory",
+        "description": "Laboratory and field experience emphasizing scientific method, scientific writing, Mendelian genetics, vertebrate anatomy and animal and plant diversity. Offered fall and winter semester.",
+        "prerequisites": ["Corequisite BIO 1200"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 1
+
+    },
+    {
         "code": "BIO 1300",
         "name": "Biology II",
-        "description": "",
+        "description": "Introduction to evolution, biological diversity, and ecology. Covers (1) micro- and macroevolution including the origin and history of life; (2) biological diversity of microorganism, fungus, plant, and animal phyla including taxonomy, structure, and function; and (3) behavior, ecology, and conservation biology.",
         "prerequisites": ["BIO 1200 recommended & Satisfies the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
         "review": "",
@@ -346,25 +112,232 @@
     {
         "code": "CHM 1440",
         "name": "General Chemistry I",
-        "description": "",
+        "description": "States of matter, atomic structure, bonding and molecular structure, chemical reactions. Recommended preparation is three years high school mathematics and one year of high school chemistry.",
         "prerequisites": ["Score of 22 or higher on ACT mathematics exam or score of 550 or higher on SAT mathematics exam or MTH 0662 with a grade of C or better or equivalent or placement above MTH 0662 &&& CHM 1440 and CHM 1470 together satisfy the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
         "review": "",
         "hours": 4
     },
     {
+        "code": "CHM 1470",
+        "name": "General Chemistry Laboratory I",
+        "description": "Experimental investigation of chemical phenomena and measurements.  Accompanies CHM 1440 but does not have to be taken concurrently.  May be taken with permission by students who have completed CHM 1430.",
+        "prerequisites": ["CHM 1440"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 1
+
+    },
+    {
         "code": "PHY 1510",
         "name": "Introductory Physics I",
-        "description": "",
+        "description": "Classical mechanics and thermodynamics. For science, mathematics and engineering students.",
         "prerequisites": ["MTH 1554 & PHY 1510 and PHY 1100 together satisfy the university general education requirement in the natural science and technology knowledge exploration area."],
         "difficulty": 1,
         "review": "",
         "hours": 4
     },
     {
+        "code": "PHY 1100",
+        "name": "General Physics Lab I",
+        "description": "Elementary experiments in mechanics, thermodynamics and waves.",
+        "prerequisites": ["PHY 1510"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 1
+
+    },
+    {
+        "code": "PHL 1310",
+        "name": "Introduction to Ethics in Science and Engineering",
+        "description": "Survey of canonical works in the history of Western ethical theory providing students a critical understanding of a plurality of viable ideas, principles, and criteria by which to evaluate and judge contemporary issues of ethical concern in the practice of science and engineering.",
+        "prerequisites": [],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 1320",
+        "name": "Intro to Python and Unix",
+        "description": "Algorithmic programming using Python. Topics include data storage and manipulation, binary numbers, bitwise operations, control structures, and functions. Introduction to fundamental data structures and script programming. Basic Unix commands and Unix utilities will be covered. With laboratory. Students can receive credit for only one of CSI 1300, CSI 1320, CSI 1420, or EGR 1400. Intended for Information Technology majors and minors.",
+        "prerequisites": ["MTH 0662"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 1420",
+        "name": "Introduction to C Programming and Unix",
+        "description": "Topics include binary numbers and C programming concepts such as data types, bitwise operations, control flow, arrays, pointers, structures, and input/output. Basic Unix commands and shell programming are covered, as well as Unix utilities for developing and debugging C programs. With laboratory. Students can receive credits for only one of CSI 1300, CSI 1320, CSI 1420, or EGR 1400. ",
+        "prerequisites": ["MTH 1554"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 2300",
+        "name": "Object-Oriented Computing",
+        "description": "Introduction to object-oriented computer programming using a high-level programming language such as Java. Classes, member functions, inheritance, polymorphism and operator overloading. Design methodologies and introduction to software engineering principles and practices. Basic data structures, algorithms and event driven programming concepts are introduced. With laboratory. ",
+        "prerequisites": ["EGR 1400 or CSI 1300 or CSI 1320 or CSI 1420 with a grade of C or higher"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 2310",
+        "name": "Data Structures",
+        "description": "This course covers data structures using object oriented programming. The fundamental data structures in computer science, including stacks, queues, lists and trees are covered in detail. Concepts of design, analysis and verification are discussed in the context of abstract data types. Examples of applications taken from numeric and symbolic domains are used. With laboratory. ",
+        "prerequisites": ["CSI 2300"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 2470",
+        "name": "Introduction to Computer Networks",
+        "description": "An introduction to fundamental concepts for design and analyses of computer networks. Topics covered include the physical layer, network protocols, Local Area Networks, Internet, wireless and mobile networks, network security, and socket programming. With laboratory. ",
+        "prerequisites": ["CSI 1320 or CSI 1420"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 2999",
+        "name": "Sophomore Project",
+        "description": "A team-oriented project work consisting of a small project to build skills in needs assessment, group problem solving, and written and oral technical presentations. ",
+        "prerequisites": ["CSI 2300 with a grade of C or higher"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 2
+    },
+
+
+
+
+
+
+
+    {
+        "code": "CSI 3370",
+        "name": "Software Engineering and Practice",
+        "description": " ",
+        "prerequisites": ["CSI 2300"],
+        "difficulty": 1,
+        "review": "Introduction to software engineering and practice. Topics include software process models, project and software management, requirements analysis, architecture modeling, implementation and system integration, quality assurance, and testing. ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 3430",
+        "name": "Theory of Computation",
+        "description": "Formal models of computation, ranging from finite state automata to Turing machines. Computational models are used to discuss the languages recognized by these machines and address issues of computability.  Identical with APM 3430. Offered winter.  ",
+        "prerequisites": ["APM 2663"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 3450",
+        "name": "Database Design and Implementation",
+        "description": "Introduction to the design, implementation and management of database systems. Topics include planning, designing, and implementing a practical database using a relational database server for an application utilizing entity relationship diagrams, normal forms, and understanding relational database schemas. Advanced topics include concurrency control, query optimization, and introduction to database systems administration. ",
+        "prerequisites": ["CSI 2290 or CSI 2300"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 3610",
+        "name": "Design and Analysis of Algorithms",
+        "description": "Computer algorithms, their design and analysis. Strategies constructing algorithmic solutions, including divide-and-conquer, dynamic programming and greedy algorithms. Computational complexity as it pertains to time and space is used to evaluate the algorithms. A general overview of complexity classes is given. Students can receive credits for CSI 3610 or CSI 3620, but not both. Identical with APM 3610. ",
+        "prerequisites": ["(CSI 2310 or CSI 2290), APM 2663, & Major standing"],
+        "difficulty": 1,
+        "review": " ",
+        "hours": 4
+    },
+    {
+        "code": "CSI 3640",
+        "name": "Computer Organization",
+        "description": "Introduction to digital logic. Assembly language, addressing modes, RISC and CISC architectures, assemblers, loaders, linkers, arithmetic and logic unit, hardware functional units, input/output organization, memory organization, cache memory, virtual memory, control unit.",
+        "prerequisites": ["(CSI 2290 or CSI 2310 or EGR 2400) & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4350",
+        "name": "Programming Languages",
+        "description": "Fundamental concepts in programming languages. Several high-level languages are studied in depth and their approaches to the fundamental issues in language design are compared. Issues include: scanning and parsing, type checking and type inference, control structures, operational semantics, binding times, run-time storage organization, compilation vs interpretation, block structure and scope of names. Formerly CSI 3350. Credit can not be earned for both CSI 3350 and CSI 4350.",
+        "prerequisites": ["CSI 2310 and CSI 3430 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4480",
+        "name": "Information Security Practice",
+        "description": "Introduction to both theoretical and hands-on aspects of vulnerability assessment, penetration testing, and system hardening. Topics include basics of confidentiality, integrity and authentication; footprinting, scanning, assessment and validations of systems and application vulnerabilities; system remediation, implementation of security policies using host and network level firewalls and intrusion detection and prevention system. Cross-listed with CSI 5480. With laboratory.",
+        "prerequisites": ["CSI 2470 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4500",
+        "name": "Fundamentals of Operating Systems",
+        "description": "Introduction to the concepts and design of operating systems. Typical topics include: sequential processes, concurrent processes, processor management, memory management, scheduling, file management, and resource protection. Cross-listed with CSI 5500.",
+        "prerequisites": ["CSI 2310, CSI 3640 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4650",
+        "name": "Parallel and Distributed Computing",
+        "description": "This course provides an integrated view of the architecture, principles, and programming of parallel and distributed systems. Topics include instruction-level parallelism and its limitations, classification of parallel systems, shared-memory and distributed-memory architectures, distributed storage systems, foundation of parallel algorithms, distributed systems architecture, and programming interfaces for parallel and distributed computing.",
+        "prerequisites": ["CSI 3640 & Majore Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4999",
+        "name": "Senior Capstone Project",
+        "description": "A team-oriented senior project to synthesize the knowledge and skills gained in the CS/IT curricula. Written and oral reports are required in addition to a working demo.",
+        "prerequisites": ["CSI 3370, CSI 3450, (CSI 3150 or CSI 3500 or CSI 3520 or CSI 3610 or CSI 3620 or CSI 3640) & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+    {
+        "code": "CSI 4130",
+        "name": "Computational Intelligence",
+        "description": "This course provides an introduction to the fundamental techniques of artificial intelligence for problem solving and inference. Topics include uninformed and informed search, adversarial search, reasoning under uncertainty, knowledge representation, planning, and machine learning models. Individual or group projects on current applications in AI. Cross-listed with CSI 5130.",
+        "prerequisites": ["(EGR 2600 or STA 2221 or STA 2226) and (CSI 3610 or CSI 3620) & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },   
+    {
         "code": "CSI 4140",
         "name": "Deep Learning and Applications",
-        "description": "",
+        "description": "Introduction to learning, background knowledge for computer vision and natural language processing, linear models for regression and classification, perceptron learning, backpropagation and shallow neural networks, deep learning basics and software frameworks, convolutional neural networks, applications in object detection and semantic segmentation, autoencoders, visualization of learned convolution masks, recurrent neural networks, applications to sequences, generative adversarial networks, reinforcement learning. Cross-listed with CSI 5140.",
         "prerequisites": ["(APM 2555 or MTH 2775) and ( EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
@@ -374,7 +347,7 @@
     {
         "code": "CSI 4170",
         "name": "Machine Learning",
-        "description": "",
+        "description": "Introduction to recognition and learning; Bayes decision theory; parametric and nonparametric methods including Hidden Markov models; Discriminant functions including support vector machines; Multilayer neural networks; Decision and regression trees for learning; Performance estimation; Unsupervised learning and clustering; Subspace methods; Application. Cross-listed with CSI 5170.",
         "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
@@ -383,7 +356,7 @@
     {
         "code": "CSI 4180",
         "name": "Natural Language Processing",
-        "description": "",
+        "description": "This course introduces the linguistic, mathematical, and computational fundamentals of natural language processing: the creation of computer programs that model human languages (e.g., English), enabling applications like automatic text categorization, machine translation, and chatbots. Topics include text preprocessing, language modeling, classification, tagging, parsing, semantics, discourse and dialog analysis, text generation, and the use of modern NLP toolkits. Non-CS majors should have some programming background. Cross-listed with CSI 5180.",
         "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
@@ -393,7 +366,7 @@
     {
         "code": "CSI 4550",
         "name": "Visual Computing",
-        "description": "",
+        "description": "This course is a comprehensive introduction to image processing and computer vision in the spatial domain. Topics include digital image fundamentals, intensity transformations, spatial filtering, morphological image processing, and image registration and image segmentation. Cross-listed with CSI 5550.",
         "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
         "difficulty": 1,
         "review": "",
@@ -401,74 +374,544 @@
 
     },
     {
-        "code": "MTH 0662",
-        "name": "Intermediate Algebra",
-        "description": "",
-        "prerequisites": ["MTH 0661 with a grade of (C) or higher or placement exam"],
+        "code": "CSI 4810",
+        "name": "Information Retrieval and Knowledge Discovery",
+        "description": "This course covers the models for information retrieval from text and multimedia databases. Methodologies for database indexing and visualization are discussed. Statistical and deterministic algorithms for discovering knowledge from databases, including, decision trees, clustering, regression, and neural models are covered. Cross-listed with CSI 5810.",
+        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+
+
+
+
+
+    {
+        "code": "MOR 3330",
+        "name": "Engineering Operations Research",
+        "description": "Introduction to operations research models used in decision making and system performance evaluation. Topics include linear programming including simplex method and duality theory, integer linear programming, the assignment and transportation problems, network flows and dynamic programming. Cross-listed with ISE 3330.",
+        "prerequisites": ["MTH 1555 with a grade of (C) or higher and a 2000 level APM/MTH class"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 3
+
+    },
+    {
+        "code": "CSI 4170",
+        "name": "Machine Learning",
+        "description": "Introduction to recognition and learning; Bayes decision theory; parametric and nonparametric methods including Hidden Markov models; Discriminant functions including support vector machines; Multilayer neural networks; Decision and regression trees for learning; Performance estimation; Unsupervised learning and clustering; Subspace methods; Application. Cross-listed with CSI 5170.",
+        "prerequisites": ["(APM 2555 or MTH 2775) and (EGR 2600 or STA 2221 or STA 2226) & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+    {
+        "code": "CSI 3660",
+        "name": "Systems Administration",
+        "description": "This course teaches the skills necessary to analyze, deploy, manage and troubleshoot Linux servers. Topics include user authentication management, system configuration and management, periodic tasks automation, data backup techniques, server deployments, system maintenance and performance analysis, and security aspects of Linux systems.",
+        "prerequisites": ["CSI 1320 or CSI 1420 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4660",
+        "name": "Advanced Systems Administration",
+        "description": "Advanced concepts in enterprise computing infrastructure analysis, deployment, management and troubleshooting. Topics include enterprise computing resource requirements analysis and design, single sign-on management, application and server deployment, virtualization, security configurations, and performance analysis. Formerly CSI 3670. Credit cannot be earned for both CSI 3670 and CSI 4660.",
+        "prerequisites": ["CSI 3660 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+
+    {
+        "code": "BIO 3400",
+        "name": "Genetics",
+        "description": "Fundamentals of classical and molecular genetics. Selected topics in human genetics, microbial genetics, biochemical genetics, molecular biology, cytogenetics and genomics. Offered fall and winter semesters.",
+        "prerequisites": ["BIO 1200 with a grade of (C) or higher"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4780",
+        "name": "Bioinformatics",
+        "description": "This course covers the fundamental algorithms and computational methods for study of biological sequence data for comparative biology and evolution with the focus on discovery of genome content, function and organization. Specific methodologies covered include the algorithms for searching sequence databases, pair-wise and multiple sequence alignment, phylogenetic methods, and methods for pattern recognition and functional inference from sequence data. Cross-listed with CSI 5780.",
+        "prerequisites": ["Major standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 4460",
+        "name": "Information Security",
+        "description": "Introduction to cryptography and its application to networking and operating system security. Topics covered include secret key and public key cryptographic algorithms, hash functions, authentication, digital signature, digital certificate, key management, email security, web security, SSL/TLS, IP security and wireless security, firewalls, intrusion detection and traceback techniques, security threats and countermeasures, and legal and ethical issues. Independent research on network security is required as student projects. Cross-listed with CSI 5460.",
+        "prerequisites": ["CSI 2470 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4480",
+        "name": "Information Security Practice",
+        "description": "Introduction to both theoretical and hands-on aspects of vulnerability assessment, penetration testing, and system hardening. Topics include basics of confidentiality, integrity and authentication; footprinting, scanning, assessment and validations of systems and application vulnerabilities; system remediation, implementation of security policies using host and network level firewalls and intrusion detection and prevention system. Cross-listed with CSI 5480. With laboratory.",
+        "prerequisites": ["CSI 2470 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4560",
+        "name": "Mobile Security",
+        "description": "This course provides a general overview of the security and privacy aspects of mobile computing. Topics include, mobile vulnerabilities, mobile malware, smartphone security, secure mobile app development, data privacy, biometrics-, multi-factor-, and codependency-based authentication and vulnerabilities, mobile location privacy, authentication in mobile devices, and secure apps communication.",
+        "prerequisites": ["Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4600",
+        "name": "Network Security",
+        "description": "Network Security will provide students a good understanding of different security aspects related to computer networks. Methods of network attacks and ways to defend against them will be discussed. Topics include attacks to different layers, security technologies, link layer security, network layer security, transport layer security and application layer security. Cross-listed with CSI 5600.",
+        "prerequisites": ["Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4700",
+        "name": "Software Security",
+        "description": "Introduction to research in foundations of software security. This course surveys common software vulnerabilities, including buffer overflows, format string attacks, cross-site scripting and botnets. The course also discusses common defense mechanisms, including static code analysis, reference monitors, language-based security, secure information flow and others. Cross-listed with CSI 5700.",
+        "prerequisites": ["Major standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "APM 4347",
+        "name": "Mathematics of Cryptology",
+        "description": "Classic cryptosystems (Hill, Vigene’re, one-time-pad), divisibility, modular arithmetic and efficient operations on large integers; practical cryptosystems (AES, RSA, DES), algebra of prime fields, prime factorization, discrete log problem, complexity theory, hash functions, birthday attacks. Modern and future cryptosystems, zero-knowledge proofs, quantum key exchange.",
+        "prerequisites": ["MTH 3002 or  APM 3610 or CSI 3610 with grade of (C) or higher, or permission of department."],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+
+
+
+
+
+
+   
+    {
+        "code": "CSI 3380",
+        "name": "Game Design",
+        "description": "This course teaches modern methods for designing and assessing the design of digital games. The course distinguishes game design from game development. Students learn theory, concepts, and industry best-practices for designing and critically analyzing games. Students apply this understanding to iteratively design their own games with popular game prototyping software.",
+        "prerequisites": ["CSI 1300, CSI 1320, CSI 1420 or EGR 1400"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4380",
+        "name": "Game Programming",
+        "description": "This course prepares students to build the skills necessary to develop games. Students learn and use various assets, game objects, and components to create different genres of 2D and 3D games with popular game engines. Students apply these skills to create their own fully functional and fun games.",
+        "prerequisites": ["CSI 2300 or CSI 2350 & Major standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 3150",
+        "name": "Web and Mobile Systems",
+        "description": "An introduction to web and mobile systems. Development of interactive web systems using front-end technologies such as HTML, CSS and JavaScript during the first half of the semester. A cross platform JavaScript framework, such as React Native along with React Library, for mobile apps development during the second half. Formerly CSI 2520. With laboratory.",
+        "prerequisites": ["CSI 2300 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4230",
+        "name": "Mobile Application Development",
+        "description": "This course focuses on mobile application development using underlying frameworks, architecture, design, and implementation. Both classroom theory and hands-on labs enable students to gain in-depth experience in developing real-world mobile applications. Topics include mobile user interface development, mobile application framework components, sensors integration, networking and persistent storage. Cross-listed with CSI 5230.",
+        "prerequisites": ["CSI 2300 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 3150",
+        "name": "Web and Mobile Systems",
+        "description": "An introduction to web and mobile systems. Development of interactive web systems using front-end technologies such as HTML, CSS and JavaScript during the first half of the semester. A cross platform JavaScript framework, such as React Native along with React Library, for mobile apps development during the second half. Formerly CSI 2520. With laboratory.",
+        "prerequisites": ["CSI 2300 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4160",
+        "name": "Integreated Computing Systems",
+        "description": "The course integrates various system components such as databases, web servers, user APIs, and cloud technologies and services. Topics include integration of various devices with web servers and cloud services. Students will gain hands-on experience in developing and integrating each of these system components with exposure to appropriate hardware, software, and simulation platforms. Cross-listed with CSI 5160.",
+        "prerequisites": ["CSI 2470, CSI 3150, CSI 3450 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+    {
+        "code": "CSI 4510",
+        "name": "Advanced Web Design Application",
+        "description": "Advanced concepts in web design including protocols for integrating databases and effective information exchange necessary for developing enterprise resource management systems are covered. Evolving technologies and web application development architectures, including multi- tier processing, session management, security, and availability are discussed. The students complete a web application as a part of the course. Crosslisted with CSI 5510.",
+        "prerequisites": ["CSI 3150 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+    },
+
+
+
+
+
+
+
+    {
+        "code": "CSI 4150",
+        "name": "AI for IT Operations",
+        "description": "This course introduces participants to MLOps tools and best practices for deploying, evaluating, monitoring and operating production ML systems on the Cloud. MLOps is a discipline focused on the deployment, testing, monitoring, and automation of ML systems in production. Cross-listed with CSI 5150.",
+        "prerequisites": ["Major standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
 
     },
     {
-        "code": "MTH 0661",
-        "name": "Elementary Algebra",
-        "description": "",
-        "prerequisites": [],
+        "code": "CSI 4240",
+        "name": "Cloud Computing",
+        "description": "The course explores latest advances in hardware and software, system architecture, and new programming paradigms that are used to develop high-throughput distributed computer systems. Topics covered include computer clusters, virtual machines, automated data centers, cloud platform architectures, service-oriented architectures, cloud programming and software environments, grid computing, and peer-to-peer computing. The course will be supplemented by selected topics from recent technical literature. Cross-listed with CSI 5240.",
+        "prerequisites": ["Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 4370",
+        "name": "Software Verification and Testing",
+        "description": "This course is designed to introduce the basic principles and techniques, facilitated by state-of-the-art software tools, in software verification and testing. Real-world examples are adopted to help understand and practice the underlying theory. Cross-listed with CSI 5370.",
+        "prerequisites": ["Major Standing"],
         "difficulty": 1,
         "review": "",
         "hours": 4
 
     },
     {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
+        "code": "CSI 4700",
+        "name": "Software Security",
+        "description": "Introduction to research in foundations of software security. This course surveys common software vulnerabilities, including buffer overflows, format string attacks, cross-site scripting and botnets. The course also discusses common defense mechanisms, including static code analysis, reference monitors, language-based security, secure information flow and others. Cross-listed with CSI 5700.",
+        "prerequisites": ["Major standing"],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 4
+    },
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 3820",
+        "name": "Data Visualization",
+        "description": "The course introduces interactive data visualization. Students learn best practices in data visualization and how to design and implement dashboards for use by stakeholders. It provides hands-on experiences using popular visualization software such as Tableau. Students practice data visualization skills in multiple assignments and a comprehensive semester-long team project. With Laboratory.",
+        "prerequisites": ["CSI 1320 or CSI 1420 & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 3
 
     },
     {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
+        "code": "CSI 3860",
+        "name": "Contemporary Issues in Data Science",
+        "description": "The course provides an introduction to the relationship between data, ethics, governance, policy, and society to help students think explicitly about their social responsibilities as data scientists using case studies and examples. The course emphasizes writing and critical thinking.",
+        "prerequisites": ["WRT 1060 with a grade of C or higher & Major Standing"],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 3
 
     },
     {
-        "code": "",
-        "name": "",
-        "description": "",
+        "code": "CSI 4820",
+        "name": "Big Data Analysis with Cloud Computing",
+        "description": "Topics related to storage, management, and analysis of Big Data on cloud platform by introducing technologies like Hadoop with MapReduce, Spark, Pig, and Hive. It also covers modeling and implementation of Big Data using various NoSQL databases such as Key-value, Columnar, Document, and graph-based. It includes a semester-long team project.",
+        "prerequisites": ["CSI 2300, CSI 3450  & Major Standing"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    }, 
+
+
+
+
+
+
+
+
+
+    {
+        "code": "CSI 2320",
+        "name": "C++ for Programmers",
+        "description": "A course in C++ programming for programmers with basic knowledge of data types and control structures in programming languages. Topics include pointers, memory management, classes, polymorphism, overloading, templates, input/output, parameter passing, multiple inheritance, standard template library, and philosophical differences in major object-oriented programming languages.",
+        "prerequisites": ["EGR 1400 or CSI 1300 or CSI 1320 or CSI 1420 or CSI 2300 "],
+        "difficulty": 1,
+        "review": "",
+        "hours": 2
+
+    },    
+    {
+        "code": "CSI 2330",
+        "name": "Immersive Python",
+        "description": "This course introduces the fundamentals and applications of Python. The language fundamentals covered are statements, variables, comments, control structures, functions, modules, packages, and objects. The course also includes advanced concepts such as collections (Lists, Tuples and Dictionaries) with their practical use for Data Processing, Systems administration, and Web development applications. Students can receive credit for CSI 1320 or CSI 2330, but not both.",
+        "prerequisites": ["EGR 1400  or CSI 1300 or CSI 1420 or CSI 2300 "],
+        "difficulty": 1,
+        "review": "",
+        "hours": 2
+
+    },    
+    {
+        "code": "CSI 2340",
+        "name": "Ruby for Web Developers",
+        "description": "This course introduces the dynamic programming language Ruby – focusing on language fundamentals, debugging and external language binding techniques, and extremely popular web development framework Ruby on the Rail (ROR). The basic ROR topics include discussion of convention over configuration as used by ROR and RESTful web development with practical exercises.",
+        "prerequisites": ["EGR 1400 or CSI 1300 or CSI 1320 or CSI 1420 or CSI 2300"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 2
+
+    },    
+    {
+        "code": "CSI 2350",
+        "name": "Programming in Visual C# for .NET Technology",
+        "description": "This course covers C#.NET for programmers who already have the basic knowledge for object-oriented programming techniques. Topics include: Windows forms, Common Language Run Time (CLR), assemblies, ADO.NET, XML, Web Services, Mobile and Embedded Development.",
+        "prerequisites": ["CSI 2300"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 2
+
+    },    
+    {
+        "code": "CSI 2810",
+        "name": "Introduction to Data Science in Python",
+        "description": "An introductory level overview of data science lifecycle topics including data acquisition, management, preparation, analysis, model development and deployment, and data visualization.Students will gain practical experience by learning and applying libraries and packages that comprise Python data analysis ecosystem. It emphasizes concepts and strategies for writing Python code. With Laboratory.",
+        "prerequisites": ["CSI 1320 or CSI 2330"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+
+
+
+
+
+
+
+
+
+    {
+        "code": "APM 2555",
+        "name": "Introduction to Differential Equations with Matrix Algebra",
+        "description": "Introduction to ordinary differential equations, Laplace transforms, linear systems, matrices, vectors, independence, Eigenvalues and eigenvectors, and applications. Students cannot receive credit for both APM 2555 and APM 2559.",
+        "prerequisites": ["MTH 1555 with a grade of (C) or higher"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },    
+    {
+        "code": "APM 3332",
+        "name": "Applied Matrix Theory",
+        "description": "Eigenvalues, eigenvectors and their applications, matrix calculus, linear differential equations, Jordan canonical forms, and quadratic forms. Time will also be spent on various computational techniques.",
+        "prerequisites": ["MTH 2775 with grade of (C) or higher"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },    
+    {
+        "code": "APM 4333",
+        "name": "Numerical Methods",
+        "description": "Approximations and interpolations, propagation of errors, numerical differentiation and integration, solutions of equations, Newton’s method, solutions of differential equations and initial value problems, Runge-Kutta and predictor-corrector methods. Required background includes courses in linear algebra and differential equations. APM 5333 is cross-listed with an undergraduate course, APM 4333. Student may not receive credit for both courses.",
+        "prerequisites": ["MTH 2775 with a grade of (C) or higher, (APM 2555 with a grade of (C) or higher or APM 2559 with a grade of (C) or higher), and knowledge of a scientific programming language, or permission of the instructor"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },    
+    {
+        "code": "APM 4334",
+        "name": "Applied Numerical Methods: Matrix Methods",
+        "description": "Systems of linear equations, Gaussian elimination, LU factorization, successive over-relaxation, approximation theory, curve fitting, eigenvalue problems, iterative techniques and non-linear systems of equations, some aspects of boundary value problems and introduction to numerical solutions of partial differential equations.  Required background includes courses in multi-variable calculus and linear algebra and knowledge of a scientific programming language. Cross-listed with APM 5334. Student may not receive credit for both courses.",
+        "prerequisites": ["MTH 2554 with a grade of (C) or higher, MTH 2775 with a grade of (C) or higher and knowledge of a scientific programming language, or permission of the instructor"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },    
+    {
+        "code": "APM 4663",
+        "name": "Applied Mathematics: Discrete Methods I",
+        "description": "Elementary graph theory (trees, cycles, planar graphs and flows) and elementary enumeration (generating function, 0-1 strings, planted plane trees, cycle decomposition and Lagrange’s inversion formula). Required background includes courses in linear algebra and discrete methods. APM 5663 is cross-listed with an undergraduate course, APM 4663. Student may not receive credit for both courses.",
         "prerequisites": [],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 4
+
+    },    
+    {
+        "code": "APM 4777",
+        "name": "Computer Algebra",
+        "description": "A study of the mathematics and algorithms which are used in symbolic algebraic manipulation packages. Topics include computer representation of symbolic mathematics, polynomial ring theory, field theory and algebraic extensions, modular and p-adic methods, subresultant algorithm for polynomial GCD’s, Groebner bases for polynomial ideals and Buchberger’s algorithm, factorization and zeros of polynomials. Required background includes a course in abstract algebra and knowledge of a scientific programming language. Cross-listed with APM 5777. Student may not receive credit for both courses.",
+        "prerequisites": ["MTH 2775 with a grade of (C) or higher and knowledge of a scientific computer programming language, or permission of instructor"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },    
+    {
+        "code": "EGR 2400",
+        "name": "Introduction to Electrical and Computer Engineering",
+        "description": "An introduction to the fundamentals of electrical and computer engineering, DC and AC circuits, digital logic circuits, combinational logic design, sequential circuits, introduction to electronics, operational amplifiers and DC electromechanical machines. With laboratory. Offered fall and winter.",
+        "prerequisites": ["MTH 1554 "],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },    
+    {
+        "code": "MTH 3552",
+        "name": "Complex Variables",
+        "description": "A study of analytic functions of a complex variable including differentiation and integration, series representations, the theory of residues and applications.",
+        "prerequisites": ["MTH 2554 with a grade of (C) or higher"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
 
     },
     {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
+        "code": "PHY 1110",
+        "name": "General Physics Lab II",
+        "description": "Elementary experiments in electricity and magnetism, optics and modern physics.",
+        "prerequisites": ["PHY 1020 or PHY 1520"],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 1
 
     },
     {
-        "code": "",
-        "name": "",
-        "description": "",
-        "prerequisites": [],
+        "code": "PHY 3250",
+        "name": "Biological Physics",
+        "description": "Applications of physics to biology, including biomechanics, fluid dynamics, statistical mechanics, diffusion, bioelectricity, biomagnetism, feedback and control.",
+        "prerequisites": ["PHY 1020 or PHY 1520 and MTH 1555 recommended"],
         "difficulty": 1,
         "review": "",
-        "hours":
+        "hours": 4
 
     },
+    {
+        "code": "PHY 3260",
+        "name": "Medical Physics",
+        "description": "Applications of physics to medicine, including signal analysis, imaging, x-rays, nuclear medicine and magnetic resonance imaging.",
+        "prerequisites": ["PHY 1020 or PHY 1520 and MTH 1555 recommended"],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+    {
+        "code": "PHY 3310",
+        "name": "Optics",
+        "description": "Geometrical optics, optical instruments, wave theory of reflection, refraction, interference, diffraction and polarization of light.",
+        "prerequisites": ["recommended PHY 1020 or PHY 1520 and MTH 1555 "],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+    {
+        "code": "PHY 3660",
+        "name": "Vibrations and Waves",
+        "description": "Oscillations; mechanical waves in one, two and three dimensions; sound.",
+        "prerequisites": ["(PHY 1020 or PHY 1520 ) and MTH 1555 "],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    },
+    {
+        "code": "PHY 3710",
+        "name": "Foundations of Modern Physics",
+        "description": "Introduction to relativity, kinetic theory, quantization and atomic physics. Additional topics chosen from physics of molecules, solids, nuclei and elementary particles.",
+        "prerequisites": ["(PHY 1020 or PHY 1520) and MTH 1555 "],
+        "difficulty": 1,
+        "review": "",
+        "hours": 4
+
+    }
     
 ]
