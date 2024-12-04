@@ -21,7 +21,6 @@ used with semi functional code
   }
 
 
-
   .course {
     border: 10px solid black;
     border-radius: 20px;
@@ -47,4 +46,8 @@ used with semi functional code
     left: 1350px;
   }
 
+  .warning {
+    color: rgb(200, 0, 0);
+    font-weight: 700;
+  }
   
