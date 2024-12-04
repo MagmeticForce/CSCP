@@ -51,3 +51,7 @@ used with semi functional code
     font-weight: 700;
   }
   
+  .DangerMeter {
+    color: green;
+    font-weight: 700;
+  }

@@ -131,6 +131,10 @@ class ScheduleOutputPage extends React.Component {
           <p className='warning'>You must take a course’s prerequisites before taking the course itself. </p> 
           <p className='warning'>Always keep an eye on the course prerequisites when dragging-and-dropping courses!</p>
           <div className='space'></div>
+          <p className= 'DangerMeter'>Check out our personal reviews for classes with our signature DangerMeter!</p>
+          <p className= 'DangerMeter'>The stars represent course difficulty on a scale on 1-3, you can hover the stars for a more detailed review!</p>
+          <p className= 'DangerMeter'>One star means the class should not be too difficult as long as you do not fall behind</p>
+          <p className= 'DangerMeter'>while three stars means you should buckle up and keep your hands and feet inside the ride at all times!</p>          
           <div className='space'></div>
           <div className='space'></div>
           <div className='space'></div>

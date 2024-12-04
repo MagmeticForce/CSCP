@@ -19,3 +19,17 @@
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2)
 }
+
+.danger-meter-container {
+    text-align: center; /* Centers the content */
+    margin-top: 10px; /* Adds some spacing from the previous content */
+  }
+  
+  .danger-meter-label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds spacing between the label and the stars */
+  }
+  
+  .danger-meter-stars {
+    display: inline-block; /* Keeps the stars aligned properly */
+  }
