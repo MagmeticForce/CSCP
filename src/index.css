@@ -36,6 +36,13 @@ body {
   margin-bottom: 2rem;
 }
 
+.name-title {
+  font-size: 1.75rem;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
 button {
   font-size: 1.2rem; /* Increase font size */
   padding: 10px 20px; /* Adjust padding (top/bottom, left/right) */
@@ -74,5 +81,32 @@ code {
   height: 100px; 
   resize: none; 
   white-space: nowrap;
+}
+
+.top-left-button {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button-image {
+  width: 20px; 
+  height: 20px;
+  margin-right: 0px; 
+}
+
+.no-hover-bg:hover {
+  background-color: transparent !important;  
+}
+
+.big-link {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
 }
 

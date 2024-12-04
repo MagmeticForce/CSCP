@@ -1,0 +1,53 @@
+/* src/components/ScheduleOutputPage.css 
+used with semi functional code
+*/
+.semester-section {
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    width: 80%;
+    text-align: left;
+  }
+  
+  .semester-section h2 {
+    color: #333;
+  }
+  
+  .semester-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+
+  .course {
+    border: 10px solid black;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: white;
+  }
+
+  .top-bar {
+    background-color: white;
+    padding: 8px;
+  }
+
+  .top-bar-text {
+    position: absolute;
+    top: 17px;
+    left: 10px;
+  }
+
+  .return-home-button {
+    position: absolute;
+    top: 17px;
+    left: 1350px;
+  }
+
+  .warning {
+    color: rgb(200, 0, 0);
+    font-weight: 700;
+  }
+  
