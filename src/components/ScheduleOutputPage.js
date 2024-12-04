@@ -6,20 +6,14 @@ import Courses from './Courses'; // Assuming you have a Course component in the 
 import './ScheduleOutputPage.css';
 import "../App.css";
 
+import { organizeBySemesters, predefinedSemesters } from '../utils/coursePlanner.js'; // Utility function
 import course_planner_page_image from '../images/Image_for_Course_Planner_Page.jpg';
-import { DragDropContext } from 'react-beautiful-dnd';
-import Schedule from '../components/Schedule.jsx';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 import { useLocation, useParams } from 'react-router-dom';
-import UserInputPage from './UserInputPage.js';
 
-//Class-based components are incredibly weird and complicated.
-//They need these special wrapper functions for some reason.
-//This wrapper function in particular is stuff that the
-//Return Home button needs, as well as stuff for
-//generating the schedule based on the user's input from
-//the User Input page. 
+// Wrapper Function for React Router Props
 function wrapper_function(Component) {
-  function Component_With_Necessary_Props(props) { //This function name must be capitalized because it is a React function-based component, and those must start with an uppercase letter according to React syntax.
+  function Component_With_Necessary_Props(props) {
     const location = useLocation();
     const navigate = useNavigate();
     const params = useParams();
@@ -30,86 +24,75 @@ function wrapper_function(Component) {
   return Component_With_Necessary_Props;
 }
 
-
-
+// Main Component
 class ScheduleOutputPage extends React.Component {
+  constructor(props) {
+    super(props);
 
-  constructor(props) { 
-    super(props); 
-    this.state = { 
-      courses: [],
-      input: []
-    };
-    //const {courses_to_be_completed} = this.props.params;
+    // Parse query parameters
+    const query = new URLSearchParams(this.props.location.search);
+    const json_string = query.get('data'); // All courses
+    const takenClassesString = query.get('taken'); // Completed courses
 
-    //Convert the transported JSON string from UserInputPage back into
-    //a JSON array. 
-    const query = new URLSearchParams(this.props.location.search); 
-    const json_string = query.get('data'); 
-    const string_of_input_from_input_page = query.get('strings');
+    // Convert parsed strings into arrays
     const course_schedule = json_string ? JSON.parse(json_string) : [];
-    const input_from_input_page = string_of_input_from_input_page ? JSON.parse(string_of_input_from_input_page) : [];
+    const takenClasses = takenClassesString ? JSON.parse(takenClassesString) : [];
 
-    //console.log("Input from input page at index 0:");
-    //console.log(input_from_input_page[0]);
+    // Filter out taken classes
+    const filteredCourses = course_schedule.filter(
+      (course) => !takenClasses.includes(course.code)
+    );
 
-    //console.log("From Schedule Output page: ");
-    //console.log(course_schedule[1]);
+    // Organize filtered courses into predefined semesters
+    const groupedSemesters = organizeBySemesters(filteredCourses, predefinedSemesters);
+    console.log("Filtered courses:", filteredCourses);
+    console.log("Grouped semesters:", groupedSemesters);
 
-    //Save the course_schedule to the state
-    this.state.courses = course_schedule;
-    this.state.input = input_from_input_page;
+        
+    // Set state
+    this.state = {
+      semesters: groupedSemesters,
+      takenClasses: takenClasses, // Optional: Track taken classes if needed
+    };
 
+    // Bind event handlers
     this.onDragEnd = this.onDragEnd.bind(this);
-    //this.setState({courses: UserInputPage.courses_to_be_completed});
-    //console.log(UserInputPage.courses_to_be_completed[1]);
-    //console.log(course_data[1]);
+  }
 
-
-  };
-
-  
-
-  //For making the Return Home button work
+  // Navigation handler
   handleNavigation = () => {
-    //Access the router properties
     const { navigate } = this.props.router;
     navigate('/');
   };
 
+  // Drag-and-drop handler
+  onDragEnd(result) {
+    const { destination, source } = result;
 
-
-
-
-
-
-
-  //Drag-and-drop fun :)
-  onDragEnd = result => {
-    const {destination, source, draggableId } = result;
-
-    //If the user does not drop in a droppable area, you don't need to do anything
-    if (!destination) {return;}
-
-    //If the user drops it back at the location it started at, you don't need to do anything
-    if (destination.droppableId === source.droppableId &&
+    if (!destination) return; // If dropped outside a valid area
+    if (
+      destination.droppableId === source.droppableId &&
       destination.index === source.index
-    ) {return;}
+    )
+      return; // If dropped in the same spot
 
+    const sourceSemesterIndex = parseInt(source.droppableId);
+    const destinationSemesterIndex = parseInt(destination.droppableId);
 
-    //Create a new array with the reordered courses,
-    //then update the original course array with the
-    //new courses.
-    const new_courses = Array.from(this.state.courses); 
-    const [moved_course] = new_courses.splice(source.index, 1);  //Removes whatever is at the source index,
-                                                                 //Which in this case is the dragged course,
-                                                                 //from the array.
-    new_courses.splice(destination.index, 0, moved_course); //Adds back the moved course at the destination index.
-    this.setState({courses: new_courses}); //Re-renders the courses with the updated array.
-  };
+    const sourceSemester = Array.from(this.state.semesters[sourceSemesterIndex]);
+    const destinationSemester = Array.from(this.state.semesters[destinationSemesterIndex]);
 
-  render () {
+    const [movedCourse] = sourceSemester.splice(source.index, 1);
+    destinationSemester.splice(destination.index, 0, movedCourse);
 
+    const updatedSemesters = Array.from(this.state.semesters);
+    updatedSemesters[sourceSemesterIndex] = sourceSemester;
+    updatedSemesters[destinationSemesterIndex] = destinationSemester;
+
+    this.setState({ semesters: updatedSemesters });
+  }
+
+  render() {
     return (
       <DragDropContext onDragEnd={this.onDragEnd}>
         <div className="App">
@@ -127,27 +110,56 @@ class ScheduleOutputPage extends React.Component {
           <p>Click and drag on a course to move it.</p>
           <p>Use this as a tool to create your own personalized schedule for the rest of your time at OU!</p>
           <div className='space'></div>
-          <p className='warning'>WARNING: please make sure you are not moving a course before its prerequisites!</p> 
-          <p className='warning'>You must take a course’s prerequisites before taking the course itself. </p> 
+          <p className='warning'>WARNING: please make sure you are not moving a course before its prerequisites!</p>
+          <p className='warning'>You must take a course’s prerequisites before taking the course itself. </p>
           <p className='warning'>Always keep an eye on the course prerequisites when dragging-and-dropping courses!</p>
           <div className='space'></div>
+          <p className='DangerMeter'>Check out our personal reviews for classes with our signature DangerMeter!</p>
+          <p className='DangerMeter'>The stars represent course difficulty on a scale on 1-3, you can hover the stars for a more detailed review!</p>
+          <p className='DangerMeter'>One star means the class should not be too difficult as long as you do not fall behind</p>
+          <p className='DangerMeter'>while three stars means you should buckle up and keep your hands and feet inside the ride at all times!</p>
           <div className='space'></div>
           <div className='space'></div>
           <div className='space'></div>
           <div className='space'></div>
-          <Schedule key="schedule_1" courses={this.state.courses}/>
+
+          {/* Render Semesters */}
+          {this.state.semesters.map((semester, semesterIndex) => (
+            <Droppable key={semesterIndex} droppableId={`${semesterIndex}`}>
+              {(provided) => (
+                <div
+                  ref={provided.innerRef}
+                  {...provided.droppableProps}
+                  className="semester-group"
+                >
+                  <h2>Semester {semesterIndex + 1}</h2>
+                  <div className="course-list">
+                    {semester.map((course, courseIndex) => (
+                      <Draggable key={course.code} draggableId={course.code} index={courseIndex}>
+                        {(provided) => (
+                          <div
+                            ref={provided.innerRef}
+                            {...provided.draggableProps}
+                            {...provided.dragHandleProps}
+                            className="course-card"
+                          >
+                            <Courses course={course} />
+                          </div>
+                        )}
+                      </Draggable>
+                    ))}
+                  </div>
+                  {provided.placeholder}
+                </div>
+              )}
+            </Droppable>
+          ))}
         </div>
       </DragDropContext>
     );
   }
 }
 
-const Schedule_Output_Page_With_Wrapper = wrapper_function (ScheduleOutputPage);
+// Wrapper Assignment
+const Schedule_Output_Page_With_Wrapper = wrapper_function(ScheduleOutputPage);
 export default Schedule_Output_Page_With_Wrapper;
-
-
-
-
-
-
-

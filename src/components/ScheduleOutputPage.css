@@ -51,3 +51,29 @@ used with semi functional code
     font-weight: 700;
   }
   
+  .DangerMeter {
+    color: green;
+    font-weight: 700;
+  }
+
+  .semester-group {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+
+
+.semester-group h2 {
+  color: #333;
+}
+
+.semester-group ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.semester-group ul li {
+  margin-bottom: 10px;
+}

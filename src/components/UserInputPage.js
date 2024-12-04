@@ -1,123 +1,77 @@
 // src/components/UserInputPage.js
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import "../App.css";
 import inital_course_data from '../data/courses.json'; // Assuming courses.json contains the course data
+import { gatherAllPrerequisites } from '../utils/coursePlanner.js';
 
 function UserInputPage() {
-
-  //Debug notes
-  //upon returning to this page:
-  //maintains courses_to_be_completed
-  //fogets input_from_input_page
-  //Tghe JSON is literally getting changed. This could be the cause of the issue!
-
-
-
-
-
-
-
   const [input_from_input_page, set_input_from_input_page] = useState([]);
-  const [live_input, set_live_input] = useState(''); //This variable will be used for storing whatever the user inputs
-                                                    //We will set it up so that every time the user types something
-                                                    //in the input field, it gets saved into this "live_input" state variable
+  const [live_input, set_live_input] = useState(''); // To store user input in real-time
   const [courses_to_be_completed, set_courses_to_be_completed] = useState([]);
 
-  /*
-  componentDidMount() { 
-    //Load the items from the JSON file into the state 
-    this.setState({ courses_to_be_completed: inital_course_data }, () => {
-      console.log(inital_course_data[1]);
-      console.log(this.state.courses[1]);
-    });
-
-  }
-  */
-
-  //Loads the .json elements into the array "courses_to_be_completed"
-  useEffect(() => { 
-    set_courses_to_be_completed(JSON.parse(JSON.stringify(inital_course_data))); //Now a copy of the JSON is linked to the "courses_to_be_completed"
-    console.log ("Original JSON data at index 0:");
-    console.log (inital_course_data[0]);
-    console.log ("Modified JSON data at index 0:");
-    console.log (courses_to_be_completed[0]);
+  // Loads the .json elements into the array "courses_to_be_completed"
+  useEffect(() => {
+    set_courses_to_be_completed(JSON.parse(JSON.stringify(inital_course_data))); // Copy the JSON data into the state
   }, []);
-
 
   const navigate = useNavigate();
 
-  const record_the_changed_input = (event) => { //Gets called every time the user makes a change to their input
-    //Save the changed input into the live_input variable.
-    //This makes it so that it records the user's input
-    //in real-time, hence why it's called "live_input".
+  // Updates the live_input with the user's input in real-time
+  const record_the_changed_input = (event) => {
     set_live_input(event.target.value);
-    //console.log (live_input);
-  }
-  
-  const handle_add_completed_course_button_click = () => {
-    //Remove the course that the user inputted from the "Courses to Be Completed" list
-    //This is done by going through the list of Courses to Be Completed, finding the index
-    //that matches the user's input, and removing the course at that index.
-    courses_to_be_completed.map ((item, index) => {
-      if (item.code === live_input) {
-        courses_to_be_completed.splice(index, 1);
-      }
-    });
+  };
 
-    console.log("Original JSON data at index 0:")
-    console.log (inital_course_data[0]);
-    console.log("Modified JSON data at index 0:")
-    console.log (courses_to_be_completed[0]);
+  // Handles adding completed courses and their prerequisites
+  const handleAddCompletedCourseButtonClick = () => {
+    const course = courses_to_be_completed.find((c) => c.code === live_input);
 
-    set_input_from_input_page([...input_from_input_page, live_input]); //Adds a new index that contains the completed course that the user inputted.
-    set_live_input(''); //makes the input field blank after the user adds a completed course.
-    //console.log(input_from_input_page[0]);
-    //input_from_input_page.map (item => (console.log(item))); //Baiscally displays the input in the console.
-  }
+    if (!course) {
+      alert("Course not found!");
+      return;
+    }
 
-  const handle_generate_schedule_button_click = () => { 
-    //console.log("From User Input page: ");
-    //console.log(courses_to_be_completed[1]);
+    // Gather all prerequisites for the course
+    const prerequisites = gatherAllPrerequisites(live_input, courses_to_be_completed);
 
-    //Convert the JSON array "courses_to_be_completed" into a stirng
-    //so that it can be transported to the ScheduleOutPutPage
-    //properly.
+    // Add the course and its prerequisites to completed courses
+    const newCompletedCourses = [...input_from_input_page, live_input, ...prerequisites];
+
+    // Remove completed courses from the "to be completed" list
+    const updatedCoursesToBeCompleted = courses_to_be_completed.filter(
+      (c) => !newCompletedCourses.includes(c.code)
+    );
+
+    set_input_from_input_page(newCompletedCourses); // Update completed courses
+    set_courses_to_be_completed(updatedCoursesToBeCompleted); // Update remaining courses
+    set_live_input(''); // Clear input field
+  };
+
+  // Generates the schedule and navigates to ScheduleOutputPage
+  const handle_generate_schedule_button_click = () => {
     const json_string = JSON.stringify(courses_to_be_completed);
     const string_of_input_from_input_page = JSON.stringify(input_from_input_page);
-    navigate(`/ScheduleOutputPage?data=${encodeURIComponent(json_string)}&strings=${encodeURIComponent(string_of_input_from_input_page)}`);
-    //navigate(`/ScheduleOutputPage/${courses_to_be_completed}`);
-  }
 
-/* 
-
-<p>Name:</p>
-<div className='space'></div>
-<textarea name="name_attribute" className="no-resize"></textarea>
-
-*/
-
-//<textarea name="incoming_credits_attribute" className="no-resize-tall" ></textarea>
+    navigate(
+      `/ScheduleOutputPage?data=${encodeURIComponent(json_string)}&taken=${encodeURIComponent(
+        string_of_input_from_input_page
+      )}`
+    );
+  };
 
   return (
-
     <>
       <div className="top-bar"></div>
       <div className="top-bar"></div>
       <div className="top-bar"></div>
       <div className="top-bar"></div>
       <h2 className="top-bar-text">Oakland University CSDP</h2>
-      <button className='return-home-button' onClick={() => navigate('/')}>Return Home</button>
+      <button className="return-home-button" onClick={() => navigate('/')}>Return Home</button>
 
       <div style={{ textAlign: 'center', marginTop: '50px' }}>
         <h1>Your Incoming Credits</h1>
       </div>
-      
-        <div className='space'></div>
-        <div className='space'></div>
-        <div className='space'></div>
-        <div className='space'></div>
-        <div className='space'></div>
+
       <div style={{ textAlign: 'left', marginLeft: '12px' }}>
         <p>Refer to the "Courses to Be Completed" list (below).</p>
         <p>For each course in that list that you have already earned credit for, write its course code in the text box and press the "Add Completed Course" button.</p>
@@ -127,33 +81,40 @@ function UserInputPage() {
       </div>
       <div style={{ textAlign: 'left', marginLeft: '25px' }}>
         <ul>
-          <li>Only enter one course code at a time in the text box.</li> 
+          <li>Only enter one course code at a time in the text box.</li>
           <li>Put a space between the letters and numbers of each course code. Example: MTH 1554</li>
         </ul>
       </div>
       <div style={{ textAlign: 'left', marginLeft: '12px' }}>
-        <input type="text" placeholder='Enter course codes...' value={live_input} onChange={record_the_changed_input}/>
-        <div className='space'></div>
-        <button onClick={handle_add_completed_course_button_click}>Add Completed Course</button>
-        <div className='space'></div>
+        <input
+          type="text"
+          placeholder="Enter course codes..."
+          value={live_input}
+          onChange={record_the_changed_input}
+        />
+        <div className="space"></div>
+        <button onClick={handleAddCompletedCourseButtonClick}>Add Completed Course</button>
+        <div className="space"></div>
         <button onClick={handle_generate_schedule_button_click}>Generate Schedule</button>
-        <h2>Completed Courses: </h2>
+        <h2>Completed Courses:</h2>
       </div>
       <div style={{ textAlign: 'left', marginLeft: '25px' }}>
         <ul>{input_from_input_page.map((item, index) => (<li key={index}>{item}</li>))}</ul>
-        <div className='space'></div>
-        <div className='space'></div>
-        <div className='space'></div>
       </div>
       <div style={{ textAlign: 'left', marginLeft: '12px' }}>
         <h2>Courses to Be Completed:</h2>
       </div>
       <div style={{ textAlign: 'left', marginLeft: '25px' }}>
-        <ul>{courses_to_be_completed.map((item, index) => (<li key={index}>{item.name} ({item.code})</li>))}</ul>
+        <ul>
+          {courses_to_be_completed.map((item, index) => (
+            <li key={index}>
+              {item.name} ({item.code})
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   );
 }
-
 
 export default UserInputPage;
